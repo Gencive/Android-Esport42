@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="@dimen/list_elem_home"
+              android:layout_margin="0dp"
+              android:background="@drawable/shad">
+
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:layout_alignParentRight="true"
+        android:textColor="@android:color/black"
+        android:layout_marginLeft="10dp"
+        android:text="Title"/>
+
+    <View
+        android:id="@+id/divider"
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:layout_below="@id/title"
+        android:layout_toRightOf="@+id/image"
+        android:layout_margin="5dp"
+        android:background="@android:color/darker_gray"/>
+
+    <TextView
+        android:id="@+id/image"
+        android:background="@drawable/ic_launcher"
+        android:layout_alignParentLeft="true"
+        android:layout_width="@dimen/list_elem_home"
+        android:layout_height="@dimen/list_elem_home"
+    />
+
+    <TextView
+        android:id="@+id/description"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/list_elem_home"
+        android:layout_toRightOf="@+id/image"
+        android:layout_below="@+id/divider"
+        android:textSize="14sp"
+        android:textColor="@android:color/black"
+        android:paddingRight="10dp"
+        android:paddingLeft="10dp"
+        android:paddingBottom="10dp"
+        android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse id dapibus ex, sit amet faucibus quam. Vivamus euismod tristique ornare. Quisque nec rhoncus nisi. Phasellus scelerisque, purus at malesuada sagittis, ex elit tincidunt sapien, vel commodo quam dolor ut ex. Nunc molestie felis pretium lectus interdum interdum. Duis consectetur velit tellus, in sodales odio blandit quis. Curabitur at tincidunt dolor, quis aliquet tortor. Cras non dolor a nisi malesuada aliquet. Sed accumsan metus laoreet, molestie nulla nec, tincidunt dui. In id eleifend massa. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Fusce erat risus, viverra eget ultrices at, malesuada sed ex. Proin elementum accumsan posuere. Duis eget tortor sem."/>
+</RelativeLayout>

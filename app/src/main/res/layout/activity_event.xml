@@ -1,0 +1,99 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+				xmlns:tools="http://schemas.android.com/tools"
+				android:layout_width="match_parent"
+				android:layout_height="match_parent"
+				tools:context="com.pkesslas.esport42.activity.EventActivity">
+
+	<RelativeLayout
+		android:id="@+id/header"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:padding="10dp"
+		android:background="@color/primary_light"
+		>
+
+	<TextView
+		android:id="@+id/title"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:gravity="center"
+		android:text="Iron Squid II"
+		android:textSize="36sp"
+		android:layout_margin="20dp"
+		android:textColor="@color/strong_accent"
+		android:shadowColor="#000000"
+		android:shadowDx="0.0"
+		android:shadowDy="0.0"
+		android:shadowRadius="15.0"
+		android:layout_centerHorizontal="true"
+		/>
+
+	<TextView
+		android:id="@+id/game"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_below="@+id/title"
+		android:textSize="26sp"
+		android:layout_margin="10dp"
+		android:textColor="@color/accent"
+		android:shadowColor="#000000"
+		android:shadowDx="0.0"
+		android:shadowDy="0.0"
+		android:shadowRadius="20.0"
+		android:layout_centerHorizontal="true"
+		android:text="[SCII] Starcraft II"/>
+
+	</RelativeLayout>
+
+	<TextView
+		android:id="@+id/start_event"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_below="@id/header"
+		android:layout_margin="20dp"
+		android:textSize="15sp"
+		android:text="@string/start_event"/>
+
+	<TextView
+		android:id="@+id/end_event"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_below="@+id/start_event"
+		android:layout_margin="20dp"
+		android:textSize="15sp"
+		android:text="@string/end_event"/>
+
+	<TextView
+		android:id="@+id/btn_register"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:background="@color/primary_light"
+		android:layout_below="@id/end_event"
+		android:layout_margin="10dp"
+		android:text="@string/register"
+		android:gravity="center"
+		android:padding="10dp"/>
+
+	<TextView
+		android:id="@+id/btn_tree"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:background="@color/primary_light"
+		android:layout_below="@id/btn_register"
+		android:layout_margin="10dp"
+		android:text="@string/tournament_tree"
+		android:gravity="center"
+		android:padding="10dp"/>
+
+	<TextView
+		android:id="@+id/btn_stream"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:background="@color/primary_light"
+		android:layout_below="@id/btn_tree"
+		android:layout_margin="10dp"
+		android:text="@string/stream"
+		android:gravity="center"
+		android:padding="10dp"/>
+
+</RelativeLayout>
